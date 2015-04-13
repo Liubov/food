@@ -19,5 +19,4 @@ def recipe(request, recipe_id):
         'lines': lines,
         'ingredients': ingredients,
     }
-    print(ingredients)
     return render(request, 'recipes/recipe.html', ctx)
