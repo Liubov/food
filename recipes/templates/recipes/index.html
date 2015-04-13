@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel='stylesheet' type='text/css' href="{% static 'recipes/main.css' %}">
+</head>
+<body>
+    <header class="page-header">
+        <a href="{% url 'index' %}">
+            <img src="{% static 'recipes/logo.png' %}">
+        </a>
+    </header>
+    <div class="division">
+        <div class="navbar">
+            <ul>
+                <li>Салаты</li>
+                <li>Супы</li>
+                <li>Курица</li>
+                <li>Говядина</li>
+                <li>Свинина</li>
+                <li>Кролик</li>
+                <li>Второе</li>
+                <li>Выпечка</li>
+                <li>Закуски</li>
+                <li class="add"><img src="{% static 'recipes/add.png' %}"> Добавить</li>
+            </ul>
+        </div>
+
+        {% for recipe in latest_recipes %}
+        <div class="receipt_offer">
+            <a href="{% url 'recipe' recipe.id %}"><div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>{{ recipe.name }}</div></a>
+        </div>
+        {% endfor %}
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+        <div class="receipt_offer">
+            <div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>Ололо Борщ</div></div>
+    </div>
+</body>
+</html>
+

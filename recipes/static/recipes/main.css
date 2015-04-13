@@ -1,0 +1,113 @@
+header.page-header {
+    position: relative;
+    height: 70px;
+    padding: 20px;
+    z-index: 5;
+    color: white;
+    box-shadow: 0 0 5px 0 #333;
+    vertical-align: middle;
+    text-align: center;
+}
+ul {
+    width:110px;
+    margin-left:-30px;
+    margin-top: 10px;
+    display:block;
+    float:left;
+}
+li {
+    border:1px solid #cccccc;
+    list-style:none;
+    padding:10px;
+    background-color:#FFFFFF;
+    text-align: left;
+}
+li.add {
+	background-color:#cccccc;
+}
+li.add:hover {
+    background-color:#e0ffff;
+}
+li:active {
+    background-color:#2ECC71;
+}
+li:hover {
+    background-color:#cccccc;
+}
+div.navbar {
+    position: absolute;
+    left:10px;
+}
+div.division {
+    position: relative;
+    padding-left: 160px;
+    max-width: 100%;
+    height: 100%;
+}
+
+div.receipt_offer {
+    display: inline-block;
+    border:1px solid #cccccc;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+    height:100px;
+    width:100px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color:#228b22;
+    font-weight: bold;
+    margin: 10px;
+    float: left;
+    box-shadow: 0 0 3px 0 #333;
+}
+div.receipt_offer:hover {
+    background-color:#cccccc;
+}
+div.inner {
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+div.description {
+    position: relative;
+    padding-left: 20px;
+}
+div.head{
+    margin:20px;
+    height: 20px;
+    padding: 8px;
+    color:white;
+    font-weight: bold;
+    background-color: #88cc00;
+    box-shadow: 0 0 3px 0 #333;
+}
+div.img{
+    height: 179px;
+    width: 265px;
+    background-image: url('/static/recipes/food5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fffacc;
+    border:solid 2px black;
+    margin:20px;
+}
+div.ingr{
+
+    margin:20px;
+    background-color:#f8f8ff;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 #333;
+    display: inline-block;
+}
+div.todo{
+    width: 600px;
+
+    margin:20px;
+    background-color:#f8f8ff;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 #333;
+    display: inline-block;
+}

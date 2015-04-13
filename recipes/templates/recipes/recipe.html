@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel='stylesheet' type='text/css' href="{% static 'recipes/main.css' %}">
+</head>
+<body>
+    <header class="page-header">
+        <a href="{% url 'index' %}">
+            <img src="{% static 'recipes/logo.png' %}">
+        </a>
+    </header>
+    <div class="division">
+        <div class="navbar">
+            <ul>
+                <li>Салаты</li>
+                <li>Супы</li>
+                <li>Курица</li>
+                <li>Говядина</li>
+                <li>Свинина</li>
+                <li>Кролик</li>
+                <li>Второе</li>
+                <li>Выпечка</li>
+                <li>Закуски</li>
+                <li class="add"><img src="{% static 'recipes/add.png' %}"> Добавить</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <div class="head">{{ recipe.name }}</div>
+            <div class="img"></div>
+            <div class="ingr"><h4>Надо:</h4>
+                {% for ingredient in recipe.ingredients.all %}
+                    {% if ingredient.amount and ingredient.amount_type %}{{ ingredient.amount }}&nbsp;{{ ingredient.amount_type }}&nbsp;{% endif %}{{ ingredient.ingredient.name }}<br/>
+                {% endfor %}
+            </div>
+            <div class="todo">
+                <h4>Как готовить:</h4>
+                {% for line in lines %}
+                <p>{{ line }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
+
