@@ -12,21 +12,7 @@
         </a>
     </header>
     <div class="division">
-        <div class="navbar">
-            <ul>
-                <li>Салаты</li>
-                <li>Супы</li>
-                <li>Курица</li>
-                <li>Говядина</li>
-                <li>Свинина</li>
-                <li>Кролик</li>
-                <li>Второе</li>
-                <li>Выпечка</li>
-                <li>Закуски</li>
-                <li class="add"><img src="{% static 'recipes/add.png' %}"> Добавить</li>
-            </ul>
-        </div>
-
+        {% include 'recipes/_navbar.html' %}
         {% for recipe in latest_recipes %}
         <div class="receipt_offer">
             <a href="{% url 'recipe' recipe.id %}"><div class="inner"><img src="{% static 'recipes/food5.png' %}"><br/>{{ recipe.name }}</div></a>

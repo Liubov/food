@@ -12,21 +12,7 @@
         </a>
     </header>
     <div class="division">
-        <div class="navbar">
-            <ul>
-                <li>Салаты</li>
-                <li>Супы</li>
-                <li>Курица</li>
-                <li>Говядина</li>
-                <li>Свинина</li>
-                <li>Кролик</li>
-                <li>Второе</li>
-                <li>Выпечка</li>
-                <li>Закуски</li>
-                <li class="add"><img src="add.png"> Добавить</li>
-            </ul>
-        </div>
-
+        {% include 'recipes/_navbar.html' %}
         <div class="add_receipt">
             <form method="post" action="url" enctype="multipart/form-data">
                 <h4>Категория</h4>

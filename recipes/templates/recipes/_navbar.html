@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<div class="navbar">
+    <ul>
+        <li>Салаты</li>
+        <li>Супы</li>
+        <li>Курица</li>
+        <li>Говядина</li>
+        <li>Свинина</li>
+        <li>Кролик</li>
+        <li>Второе</li>
+        <li>Выпечка</li>
+        <li>Закуски</li>
+        <li class="add"><img src="{% static 'recipes/add.png' %}"><a href="{% url 'add_recipe' %}">Добавить</a></li>
+    </ul>
+</div>
