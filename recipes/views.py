@@ -20,3 +20,7 @@ def recipe(request, recipe_id):
         'ingredients': ingredients,
     }
     return render(request, 'recipes/recipe.html', ctx)
+
+
+def add_recipe(request):
+    return render(request, 'recipes/add_recipe.html')

@@ -71,6 +71,23 @@ div.inner {
     padding-top: 20px;
 }
 
+div.add_receipt{
+    margin: 30px;
+}
+input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+}
+input[type="file"]{
+    display:block;
+    margin-top:10px;
+}
+textarea{
+    display:block;
+    margin-top:10px;
+    width: 100%;
+}
+
 div.description {
     position: relative;
     padding-left: 20px;

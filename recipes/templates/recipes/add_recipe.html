@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel='stylesheet' type='text/css' href="{% static 'recipes/main.css' %}">
+</head>
+<body>
+    <header class="page-header">
+        <a href="{% url 'index' %}">
+            <img src="{% static 'recipes/logo.png' %}">
+        </a>
+    </header>
+    <div class="division">
+        <div class="navbar">
+            <ul>
+                <li>Салаты</li>
+                <li>Супы</li>
+                <li>Курица</li>
+                <li>Говядина</li>
+                <li>Свинина</li>
+                <li>Кролик</li>
+                <li>Второе</li>
+                <li>Выпечка</li>
+                <li>Закуски</li>
+                <li class="add"><img src="add.png"> Добавить</li>
+            </ul>
+        </div>
+
+        <div class="add_receipt">
+            <form method="post" action="url" enctype="multipart/form-data">
+                <h4>Категория</h4>
+                <select name="Раздел[]" multiple size="9">
+                    <option>Салаты</option>
+                    <option>Супы</option>
+                    <option>Курица</option>
+                    <option>Говядина</option>
+                    <option>Свинина</option>
+                    <option>Кролик</option>
+                    <option>Второе</option>
+                    <option>Выпечка</option>
+                    <option>Закуски</option>
+                </select>
+                <h4>Фото</h4>
+                <input type="file" name="photo">
+                <h4>Состав</h4>
+                <textarea name="products" rows="10"></textarea>
+                <h4>Рецепт</h4>
+                <textarea  name="action" rows="30"></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </body>
+</html>
